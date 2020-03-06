@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  	<title>form属性示例</title>
+	<meta charset="UTF-8">
+	<style>
+		.box{
+			width: 500px;
+			height: 750px;
+		}
+		input{
+			width:485px;
+			height: 30px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		p{
+			color:red;
+			font-size: 25px;
+		}
+		.sub{
+			height: 40px;
+			background-color:rgb(194, 186, 186);
+		}
+	</style>
+</head>
+<body>
+	<h1>学生信息</h1>
+	<fieldset class="box">
+		<legend><p>学生档案</p></legend>
+		<form class="form" method="get" action="#S">	
+			姓名：<br/>
+			<input type="text" name="name1" required placeholder="请输入姓名"><span style="color:red">*</span>
+			<br/>
+			学号：<br/>
+			<input type="text" name="name2" required placeholder="请输入学号"><span style="color:red">*</span>
+			<br/>
+			手机号码：<br/>
+			<input type="tel" name="name3" required placeholder="请输入手机号"><span style="color:red">*</span>
+			<br/>
+			邮箱地址：<br/>
+			<input type="email" name="name4" required placeholder="请输入邮箱地址"><span style="color:red">*</span>
+			<br/>
+			录取学校：<br/>
+			<input type="search" list="school" name="name5" >
+			<datalist id="school">
+				<option>河北师范大学</option>
+				<option>河北科技大学</option>
+			</datalist>
+			<br/>
+			入学成绩：<br/>
+			<input type="text" name="name6" >
+			<br/>
+			入学时间：<br/>
+			<input type="date" name="name6" >
+			<br/>
+			<input type="submit" value="提交" class="sub"/>
+		</form>
+	</fieldset>
+</body>
+</html>
+
+
